@@ -54,6 +54,38 @@ XXXXXXX
 **Note:** This is the end of the current demo guide instructions.
 </div>
 
+## Purpose of the template
+
+Latest changes in MCAPS subscription required provisioning resources with disabled public access. The following template will help you quickly provision your sandbox subscription compliant with SFI requirements.
+
+Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration.  
 
 
+## Provisioned resources
+
+1. Open provisioned resource group. 
+2. Following services should be deployed.
+- Azure Storage account
+- Cosmos DB account and database
+- Azure SQL server and database
+- Azure Key Vault 
+
+<img src="https://raw.githubusercontent.com/true-while/event-hub-azd/refs/heads/main/demoguide/img/image.png" title="Demo schema">
+
+
+## Storage Account Demonstration
+
+1. From the provisioned resource group open storage account.
+2. Navigate to the `Networking` settings and confirm that network perimter connoted.
+3. Create new container and upload file to the container. Make sure that file is visible from Azure portal.
+
+## KeyVault demonstrator
+
+
+
+## Cosmos DB demonstration
+
+
+
+## SQL Server Demonstration
 

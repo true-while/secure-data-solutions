@@ -1,5 +1,5 @@
 # SFI complaint scenario for Azure demonstrations
-AZD template which deploys SFI complaint scenario for demonstration for following services.
+AZD template which deploys SFI complaint scenario for demonstration following services.
 - Azure Storage Account
 - Azure Cosmos DB
 - Azure SQL
