@@ -60,6 +60,8 @@ Latest changes in MCAPS subscription required provisioning resources with disabl
 
 Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration.  
 
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/schema.png" title="schema">
+
 
 ## Provisioned resources
 
@@ -70,7 +72,7 @@ Provisioned services can stay in your subscription safely for a long time and co
 - Azure SQL server and database
 - Azure Key Vault 
 
-<img src="https://raw.githubusercontent.com/true-while/event-hub-azd/refs/heads/main/demoguide/img/image.png" title="Demo schema">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/rg.png" title="Rg List">
 
 
 ## Storage Account Demonstration
