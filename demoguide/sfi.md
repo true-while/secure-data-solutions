@@ -51,7 +51,7 @@ Provisioned services can stay in your subscription safely for a long time and co
 - Azure SQL server and database
 - Azure Key Vault 
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/rg.png" title="Rg List">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/rg.png" title="Rg List" style="width:70%;">
 
 
 ## 3. Storage Account Demonstration
@@ -59,11 +59,11 @@ Provisioned services can stay in your subscription safely for a long time and co
 1. From the provisioned resource group open storage account.
 2. Navigate to the `Networking` settings and confirm that network perimeter connoted.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-networking.png" title="networking for storage account">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-networking.png" title="networking for storage account" style="width:50%;">
 
 3. Create new container and upload file to the container. Make sure that file is visible from Azure portal.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-test.png" title="test for storage account">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-test.png" title="test for storage account" style="width:50%;">
 
 ## 4. KeyVault demonstrator
 
@@ -71,11 +71,11 @@ Provisioned services can stay in your subscription safely for a long time and co
 
 2. Navigate to the `Networking` settings and confirm that public access is disabled.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-netwokring.png" title="networking for keyvault">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-networking.png" title="networking for keyvault" >
 
 3. Create a new key to make sure that access allowed to your IP and RBAC configured to let you manage keys.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-test.png" title="test for keyvault">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-test.png" title="test for keyvault" style="width:70%">
 
 ## 5. Cosmos DB demonstration
 
@@ -87,7 +87,7 @@ Provisioned services can stay in your subscription safely for a long time and co
 
 3. Navigate to Test container and create a new document. Check if you get permission and connection allowed by firewall.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/cosmos-test.png" title="test for cosmos db">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/cosmos-test.png" title="test for cosmos db" style="width:70%">
 
 ## 6. SQL Server Demonstration
 
@@ -95,11 +95,11 @@ Provisioned services can stay in your subscription safely for a long time and co
 
 2. Navigate to the provisioned database and select `Firewall` settings and confirm that public access is disabled. If it doesn't disabled you can disabled it manual. 
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-netwokring.png" title="networking for sql db">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-networking.png" title="networking for sql db" style="width:50%">
 
 3. Open `Query Editor` and signing with your Entra ID account. You can observe the list of views to make sure you have access to the objects and doesn't blocked by firewall.
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-test.png" title="test for sql db">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-test.png" title="test for sql db" style="width:50%">
 
 
 [comment]: <> (this is the closing section of the demo steps. Please do not change anything here to keep the layout consistent with the other demoguides.)
