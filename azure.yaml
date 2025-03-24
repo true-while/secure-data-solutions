@@ -18,13 +18,11 @@ hooks:
     shell: pwsh
     interactive: true
     run: |
-      Write-Output $env:IP
-
       Write-Output "Step 1: Create KeyVault RBAC assignment"
-      ##az role assignment create --assignee $env:USER --role "Key Vault Crypto Officer" --scope $env:KEYVAULT_ID --output none
+      az role assignment create --assignee $env:USER --role "Key Vault Crypto Officer" --scope $env:KEYVAULT_ID --output none
 
       Write-Output "Step 2: Create Storage RBAC assignment"
-      ##az role assignment create --assignee $env:USER --role "Storage Blob Data Contributor" --scope $env:BLOB_ID --output none
+      az role assignment create --assignee $env:USER --role "Storage Blob Data Contributor" --scope $env:BLOB_ID --output none
       
       Write-Output "Step 3: CosmosDB RBAC assignment"
       az cosmosdb sql role assignment create --account-name $env:COSMOS_NAME --resource-group $env:RGNAME  --scope '/' --principal-id $env:USER --role-definition-id $env:COSMOS_ROLE1 --output none

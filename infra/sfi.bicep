@@ -144,6 +144,7 @@ resource sqlserver'Microsoft.Sql/servers@2024-05-01-preview' = {
       azureADOnlyAuthentication: true
     }
     restrictOutboundNetworkAccess: 'Disabled'
+    
   }
 }
 

@@ -29,16 +29,77 @@
             margin: 5px;">
 
 **Tip:** 
-1. XXXX
-
+This template provides essential configuration for your demos but does not load it with data. You can configure provisioned services for your demos manually. The environment can stay in your subscription for a long time and provide access to your custom demos.
 </div>
 
 ***
 ### 1. Demo scenario
 
-XXXXXXX
+Latest changes in MCAPS subscription required provisioning resources with disabled public access. The following template will help you quickly provision your sandbox subscription compliant with SFI requirements.
+
+Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration.  
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/schema.png" title="schema">
 
 
+## 2. Provisioned resources
+
+1. Open provisioned resource group. 
+2. Following services should be deployed.
+- Azure Storage account
+- Cosmos DB account and database
+- Azure SQL server and database
+- Azure Key Vault 
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/rg.png" title="Rg List">
+
+
+## 3. Storage Account Demonstration
+
+1. From the provisioned resource group open storage account.
+2. Navigate to the `Networking` settings and confirm that network perimeter connoted.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-networking.png" title="networking for storage account">
+
+3. Create new container and upload file to the container. Make sure that file is visible from Azure portal.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/storage-test.png" title="test for storage account">
+
+## 4. KeyVault demonstrator
+
+1. From the provisioned resource group open provisioned key vault.
+
+2. Navigate to the `Networking` settings and confirm that public access is disabled.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-netwokring.png" title="networking for keyvault">
+
+3. Create a new key to make sure that access allowed to your IP and RBAC configured to let you manage keys.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/keyvault-test.png" title="test for keyvault">
+
+## 5. Cosmos DB demonstration
+
+1. From the provisioned resource group open provisioned Cosmos DB.
+
+2. Navigate to the `Networking` settings and confirm that public access is disabled.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/cosmos-netwokring.png" title="networking for cosmos db" style="width:70%">
+
+3. Navigate to Test container and create a new document. Check if you get permission and connection allowed by firewall.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/cosmos-test.png" title="test for cosmos db">
+
+## 6. SQL Server Demonstration
+
+1. From the provisioned resource group open provisioned SQL Server and look up for SQL DB.
+
+2. Navigate to the provisioned database and select `Firewall` settings and confirm that public access is disabled. If it doesn't disabled you can disabled it manual. 
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-netwokring.png" title="networking for sql db">
+
+3. Open `Query Editor` and signing with your Entra ID account. You can observe the list of views to make sure you have access to the objects and doesn't blocked by firewall.
+
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/sql-test.png" title="test for sql db">
 
 
 [comment]: <> (this is the closing section of the demo steps. Please do not change anything here to keep the layout consistent with the other demoguides.)
@@ -54,40 +115,4 @@ XXXXXXX
 **Note:** This is the end of the current demo guide instructions.
 </div>
 
-## Purpose of the template
-
-Latest changes in MCAPS subscription required provisioning resources with disabled public access. The following template will help you quickly provision your sandbox subscription compliant with SFI requirements.
-
-Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration.  
-
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/schema.png" title="schema">
-
-
-## Provisioned resources
-
-1. Open provisioned resource group. 
-2. Following services should be deployed.
-- Azure Storage account
-- Cosmos DB account and database
-- Azure SQL server and database
-- Azure Key Vault 
-
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/rg.png" title="Rg List">
-
-
-## Storage Account Demonstration
-
-1. From the provisioned resource group open storage account.
-2. Navigate to the `Networking` settings and confirm that network perimter connoted.
-3. Create new container and upload file to the container. Make sure that file is visible from Azure portal.
-
-## KeyVault demonstrator
-
-
-
-## Cosmos DB demonstration
-
-
-
-## SQL Server Demonstration
 
