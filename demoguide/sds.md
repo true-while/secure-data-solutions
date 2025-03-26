@@ -7,7 +7,7 @@
 
 [comment]: <> (this is the section for the Note: item; please do not make any changes here)
 ***
-### SFI
+### Secure Azure Data Solutions
 
 <div style="background: lightgreen; 
             font-size: 14px; 
@@ -35,18 +35,26 @@ This template provides essential configuration for your demos but does not load 
 ***
 ### 1. Demo scenario
 
-Latest changes in MCAPS subscription required provisioning resources with disabled public access. The following template will help you quickly provision your sandbox subscription compliant with SFI requirements.
+Latest security changes in Azure subscription required provisioning resources without public access. The following template will help you quickly provision your sandbox resources compliant with security requirements such as:
+ - no public access
+ - no access with keys
+ - no SQL authentication
+ - no anonymous access
+ - only RBAC managed access integrated with Entra platform.
 
-Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration.  
+Following services will be provisioned and protected from public access:
 
-<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/schema.png" title="schema">
+<img src="https://raw.githubusercontent.com/true-while/sfi-mcaps/refs/heads/main/demoguide/img/schema.png" title="schema" style="width:70%;">
+
+Provisioned services can stay in your subscription safely for a long time and could be a base for your custom demonstration. Because of the low cost you do not need to delete those services after delivery. 
 
 
 ## 2. Provisioned resources
 
 1. Open provisioned resource group. 
-2. Following services should be deployed.
-- Azure Storage account
+
+2. The following services should be deployed:
+- Azure Storage account (ADLS)
 - Cosmos DB account and database
 - Azure SQL server and database
 - Azure Key Vault 

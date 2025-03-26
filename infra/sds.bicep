@@ -164,6 +164,7 @@ resource storage 'Microsoft.Storage/storageAccounts@2023-05-01' = {
     allowBlobPublicAccess: false
     allowSharedKeyAccess: true
     largeFileSharesState: 'Enabled'
+    isHnsEnabled: true
     networkAcls: {
       bypass: 'AzureServices'
       virtualNetworkRules: []

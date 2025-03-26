@@ -31,7 +31,7 @@ resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
   tags: tags
 }
 
-module sfi 'sfi.bicep' = {
+module sds 'sds.bicep' = {
   scope: rg
   name: 'SFI'
   params: {
@@ -42,10 +42,10 @@ module sfi 'sfi.bicep' = {
 }
 
 
-output KEYVAULT_ID string = sfi.outputs.KEYVAULT_ID
-output USER string = sfi.outputs.USER
-output BLOB_ID string = sfi.outputs.BLOB_ID
-output COSMOS_NAME string = sfi.outputs.COSMOS_NAME
-output COSMOS_ROLE1 string =sfi.outputs.COSMOS_ROLE1
-output COSMOS_ROLE2 string = sfi.outputs.COSMOS_ROLE2
+output KEYVAULT_ID string = sds.outputs.KEYVAULT_ID
+output USER string = sds.outputs.USER
+output BLOB_ID string = sds.outputs.BLOB_ID
+output COSMOS_NAME string = sds.outputs.COSMOS_NAME
+output COSMOS_ROLE1 string =sds.outputs.COSMOS_ROLE1
+output COSMOS_ROLE2 string = sds.outputs.COSMOS_ROLE2
 output RGNAME string = rg.name
