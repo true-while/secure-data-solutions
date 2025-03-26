@@ -17,7 +17,6 @@
             margin: 5px;">
 
 **Note:** Below demo steps should be used **as a guideline** for doing your own demos. Please consider contributing to add additional demo steps.
-</div>
 
 [comment]: <> (this is the section for the Tip: item; consider adding a Tip, or remove the section between <div> and </div> if there is no tip)
 
@@ -28,8 +27,11 @@
             border: 1px solid lightgray; 
             margin: 5px;">
 
-**Tip:** 
+**Tip 1:** 
 This template provides essential configuration for your demos but does not load it with data. You can configure provisioned services for your demos manually. The environment can stay in your subscription for a long time and provide access to your custom demos.
+
+**Tip 2:** The deployment process detects your **current IP address** and creates an exception for connecting from your laptop. If IP changed or wrongly detected you can update it after deployment in `outbound` settings of security perimeter.
+</div>
 </div>
 
 ***
